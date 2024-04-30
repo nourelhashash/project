@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>log in </title>
+    <meta name="description" charset="UTF-8">
+
+    <link rel="stylesheet" href="log_in.CSS">
+    
+</head>
+
+<body class="body">
+    
+    <main>
+        <div class="big">
+             <form method="post" id="form" name="myform" onsubmit="return validateform()" >
+                <h1><b> LOGIN</b></h1>
+                <div class="div_e">
+                    <label for="email" style="font-size: 20px;">username</label>
+                    <input type="email" placeholder="email address" class="email;" id="email" name="email">
+                </div>
+                <div class="div_p">
+                    <label for="pass" style="font-size: 20px;" >password</label>
+                    <input type="password" name="password" id="pass" placeholder="password" class="pass" id="pass" >
+                    <p id="mes"></p>
+                </div>
+                <button type="submit" class="button">sign in</button>
+                <a href="Register.html" class="Register">sign up</a>
+            </form>
+        </div>
+    </main>
+
+    <script src="log_in.js"></script>
+</body>
+
+</html>

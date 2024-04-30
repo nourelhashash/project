@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+
+/* ========================== start header ============================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ============= FOR HEADER ICONS =========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/profile.css');
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="mn_store_logo.jpg">
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+
+
+:root {
+    --green-color: #3cb815;
+    --light-green-color: #c0eb7b;
+    --orange-color: #ff7e00;
+    --light-orange-color: #f75f1d;
+    --text-color: #1a2428;
+    --bg-color: #fff;
+    
+    /* ======= for light and dark mode ======= */
+    --primary-color: #e3e6f3;
+    --secondary-color: black;
+}
+
+/* ======= for light and dark mode ======= */
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+
+
+header {
+    position: sticky;
+    border-radius: 0.5rem;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 25%);
+    padding: 20px 50px;
+    transition: 0.5s;
+    width: 93%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 400;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+    text-decoration: none;
+}
+
+.logo .bx {
+    font-size: 24px;
+    color: var(--orange-color);
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 0.5rem;
+    list-style: none;
+    
+}
+
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none; /*  to remove underlines in the header */
+}
+
+.navbar a:hover {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+    text-decoration: none;   to remove underlines in the header 
+}
+
+.profile {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+}
+
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+#moon_icon{
+    width: 40px;
+    margin-left: 10px;
+}
+#moon_icon:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+.profile a {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+
+
+/* ============================ End header ============================= */
+
+
+body{
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+    font-family: "Quicksand", sans-serif;
+
+}
+
+
+/* =============== Start profile-picture container style ============= */
+
+
+/* Hide file input */
+#file-input {
+  display: none;
+}
+
+/* Styles for profile picture container */
+.profile-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 25px auto;
+  border-style: none;
+  border-radius: 75px;
+  
+}
+.profile-picture:hover{
+    transition: 0.3s;
+    scale: 1.02;
+}
+
+/* Styles for profile picture */
+#profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Styles for label */
+.image-label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Styles for label span */
+.image-label span {
+  display: none;
+}
+
+/* Show label span when file input is checked */
+#file-input:checked + label span {
+  display: block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* =========== End profile-picture container style =============*/
+
+
+
+/* =========== Start edit profile container style ============ */  
+.container h1{
+    
+}
+.container{
+    max-width: 650px;
+    margin: 85px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white; 
+    
+}
+label{
+    display: block;
+    margin-bottom: 4px;
+    
+     
+}
+
+
+
+.gender{
+    display: ruby;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 15px;
+    
+    
+}
+button:hover{
+    transition: 0.2s;
+    background-color: #3cb815;
+    scale: 1.02;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* =========== End edit profile container style ============ */  
+
+        /* ================== Footer ==================== */
+
+footer {
+    margin: 100px 0;
+}
+ 
+footer .logo{
+    width: 60px;
+    height:60px;
+    border-radius: 30px;
+}
+
+
+
+footer .visa{
+    width: 130px;
+}
+footer .follow {
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+footer .follow i {
+    color: #465b52;
+    margin-right: 4px;
+}
+footer .follow i:hover {
+    color: #088178;
+}
+footer .copyright {
+    text-align: center;
+    width: 100;
+    color: var(--secondary-color);
+}
+footer .pay p,
+.col p{
+    color: var(--secondary-color);
+}
+
+
+
+/*menu list*/
+
+
+.menu-list {
+    position: absolute;
+    top: 69px;
+    left: 38%;
+    display: none;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list li {
+    margin-bottom: 20px;
+}
+
+.menu-list a {
+    color: var(--text-color);
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.menu-list a:hover {
+    color: var(--bg-color);
+    background: var(--green-color);
+    border-radius: 5rem;
+}
+

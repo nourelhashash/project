@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="edit_profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="media/icons/user-icon.svg">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+       <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+       <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+       <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+        
+        
+        <title>edit profile</title>
+    </head>
+    <body>
+        
+        <!-- ================== start header ==================== -->
+        
+        <header>
+        <!--Navbar-->
+        <a href="#" class="logo">
+            <img src="media/images/mn_store_logo.jpg" alt="logo" class="logo">
+            <h2>M&N Store</h2>
+        </a>
+        <!--Menu Icon-->
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--Nav list-->
+        <ul class="navbar">
+            <li><button id="moon_icon" class="Dark-mode"><i class="gg-dark-mode"></i></button></li>
+            <li><a href="home.html" class="home-active">Home</a></li>
+            <li><a href="#categories" class="categories-active">categories</a></li>
+            <li><a href="Contact_Us.html">contact</a></li>
+            <li><a href="test.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html">logout</a></li>
+            
+            <li><a href="cart.html">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                    </svg>
+                </a>
+            </li>
+            
+        </ul>
+        
+        <div class="profile">
+        <a href="edit_profile.html"><i class="gg-profile"></i>edit profile</a>
+    </div>
+            
+        </header>
+        
+        <!-- ================== End header ==================== -->
+        
+        
+        <div class="container" style="box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);">
+            <h1><i class="fa-solid fa-user"></i>  edit profile</h1>
+                <div class="picture-container">
+                    <h3 style="text-align: center;">profile picture</h3>
+                    <div class="profile-picture">
+                        <input type="file" id="file-input" accept="image/*">
+                        <label class="image-label" for="file-input">
+                        <img id="profile-img" src="media/images/my_profile_image.png" alt="Profile Picture">
+                        <span>Change Picture</span>
+                        </label>
+                    </div>
+                </div>
+      
+
+    <!--      ==========  End profile picture modification  ============-->
+
+    <!--         ================= start the form =================-->
+
+            <div class="form-container">
+                <form>
+                <div class="input-boxes">
+                    <label for="fname">first name:</label>
+                    <input type="text" id="fname" name="fname" value="Mina" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="sname">second name:</label>
+                    <input type="text" id="sname" name="sname" value="George" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="email"> <i class="fa-solid fa-envelope"></i> Email:</label>
+                    <input id="email" type="email" name="email" value="mina@gmail.com" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="password"> <i class="fa-solid fa-lock"></i> password:</label>
+                    <input type="password" id="password" name="password"  value="123456" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="cpassword">confirm password:</label>
+                    <input type="password" id="cpassword" name="cpassword" value="123456"  required>
+                </div>
+                <div class="gender">
+                    <p> <i class="fa-solid fa-person"></i> gender:</p>
+                    <input type="radio" id="male" name="gender" value="male"  required checked>
+                    <label for="radio">male <i class="fa-solid fa-mars"></i> </label>
+                    
+                    <input type="radio" id="female" name="gender" value="female"  required>
+                    <label for="radio">female <i class="fa-solid fa-venus"></i></label>
+                </div>
+                    <br>
+                <button type="submit">Save Changes</button>
+
+            </form>
+            </div>
+        </div>
+
+        
+        <!-- ================== Footer ====================-->
+        
+    <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="media/images/mn_store_logo.jpg" alt="logo" class="logo-picture" />
+            <p>MN store</p>
+          
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        <div class="pay">
+          <p>Secured Payment Gateways</p>
+          <img class="visa" src="media/icons/visa-footer.jpg" alt="pay" />
+        </div>
+        <div class="copyright">
+          <p>©2024 Mina George. All Rights Reseverd.</p>
+        </div>
+      </footer>
+        
+        <!-- ===================== End footer ======================= -->
+        
+      <script src="project.js"></script>       
+</body>
+</html>

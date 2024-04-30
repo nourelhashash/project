@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="grocery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="./images grocery/M&N.jpg"> <!-- Change  to the URL of your icon image -->
+
+  <title>Grocery</title>
+
+</head>
+
+
+
+
+<!-- -------------------- -->
+<body>
+  <header>
+    <!-- Navbar -->
+    <a href="#" class="logo-header">
+        <img src="images grocery/M&N.jpg" alt="logo" class="logo-header">
+        <h2>M&N Store</h2>
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <div>
+      <input type="checkbox" id="theme-toggle" class="theme-toggle">
+      <label for="theme-toggle" class="theme-label"><i class="gg-dark-mode"></i></label>
+      
+      <link id="theme-style" rel="stylesheet" href="light-theme.css">
+    
+     </div>
+    <ul class="navbar">
+        <li><a href="home.html" class="home-active">Home</a></li>
+        <li><a href="#categories" id="categories-link" class="categories-active">Categories</a></li>
+        <li><a href="Contact_Us.html">Contact</a></li>
+        <li><a href="test.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html">Logout</a>
+        <li><a href="cart.html">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                </svg>
+            </a>
+        </li>
+    </ul>
+    <!-- Profile -->
+    <div class="profile">
+        <a href="edit_profile.html"><i class="gg-profile"></i>edit profile</a>
+    </div>
+    <!-- Menu List -->
+    <ul class="menu-list" id="categories-menu">
+        <li><a href="Gym_Products.html">Gym</a></li>
+        <li><a href="final_kitchen_page2.html">Kitchen</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="book store.html">Book Store</a></li>
+        <li><a href="text-1.html">clothes</a></li>
+        <li><a href="grocery2.html">Grocery</a></li>
+        <li><a href="sports.html">ٍsports</a></li>
+        <!-- Add more categories as needed -->
+    </ul>
+    <!-- darkmode checkbox -->
+    
+</header>
+<!-- header ks -->
+<script src="grocery.js"></script>
+
+
+
+
+<!-- the iframe -->
+
+  <div class="centerpiece">
+    
+    <iframe src="images grocery/offer.jpg" scrolling="no"></iframe>
+</div>
+
+<!-- -------------------------- -->
+    <section id="products">
+      <div class="searchbar">
+        <input placeholder="       Search..." id="searchBar" name="searchBar" type="text">
+          </div>
+      <div class="container">
+          <div id="product-list" class="product-grid">
+            <!-- Product listings will be dynamically added here -->
+          </div> 
+        </div>
+      </section>
+     
+  <!-- The sidebar -->
+
+      <nav class="catebar">
+        <div class="navcontent">
+          <div class="logo">Products</div>
+          <ul class="nav-menu">
+            <li><a href="#"> Fresh Vegatables&Fruits</a></li>
+            <li><a href="#">Dairy</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Ready to eat</a></li>
+            <li><a href="#">More--></a></li>
+          </ul>
+        </div>
+      </nav>
+    
+<!-- Page content -->
+
+      <section id="product-sorting">
+        <div class="container">
+          <h3> Sort Products   :   </h3>
+          <div class="sorting-icons">
+            <div class="sorting-option">
+              <i class="fas fa-sort-alpha-up"></i>
+              <span>Alphabetical</span>
+            </div>
+            <div class="sorting-option">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Price</span>
+            </div>
+            <div class="sorting-option">
+              <i class="fa-solid fa-check-double"></i>
+              <span>Availabilty</span>
+            </div>
+            
+            <!-- Add more sorting options as needed -->
+          </div>
+        </div>
+      </section>
+    </main>
+          <!-- Product listings will be dynamically added here -->
+          <div id="product-list" class="product-grid">
+            <div class="product">
+              <img src="images grocery/kahk.jpeg" alt="علبة كحك 1ك">
+              <h3>علبة كحك مشكل 1ك</h3>
+                <p class="original-price">450L.E</p>
+                <p class="sale-price">300L.E</p> 
+              
+               <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+
+                <button>Add to Cart</button>
+            </div>
+
+<!-- -------------------------------- -->
+            <div class="product">
+              <img src="images grocery/suntop.jpg" alt="suntop juice">
+              <h3>SunTop jucice </h3>
+               <p class="original-price">18L.E</p>
+               <p class="sale-price">12L.E</p>
+               
+              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+              <button>Add to Cart</button>
+            </div>
+
+<!-- ------------------------- -->
+            <div class="product">
+              <img src="images grocery/rice.jpg" alt="rice Al-doha">
+              <h3>Al-Doha Egyptian rice 5Kilos</h3>
+               <p class="original-price">210L.E</p>
+               <p class="sale-price">190L.E</p>
+               
+              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+              <button>Add to Cart</button>
+            </div>
+
+<!-- ------------- -->
+            <div class="product">
+              <img src="images grocery/oil.jpg" alt="Oil Afia">
+              <h3>Afia Sunflower Oil 2.2L</h3>
+               <p class="original-price">250L.E</p>
+               <p class="sale-price">200L.E</p> 
+               
+              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+
+              <button>Add to Cart</button>
+            </div>
+<!-- ---------------- -->
+
+            <div class="product">
+              <img src="images grocery/milk.jpg" alt="Almariaa Milk">
+              <h3>Almariaa Plain Full Cream Milk 1.2Liter</h3>
+               <p class="original-price">65L.E</p>
+               <p class="sale-price">60L.E</p> 
+               
+              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+              <button>Add to Cart</button>
+            </div>
+
+<!-- ----------------------- -->
+            <div class="product">
+              <img src="images grocery/tea.jpg" alt="El Arosa Tea">
+              <h3>El Arosa Dust Tea 250gram</h3>
+               <p class="original-price">55L.E</p>
+              <p class="sale-price">45L.E</p> 
+               
+              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+              <button>Add to Cart</button>
+            </div>
+<!-- ------------------------- -->
+             <div class="product">
+              <img src="images grocery/korean.jpg" alt="Korean Noodles">
+               <h3>KOrean Noodles</h3>
+                 <p class="original-price">150L.E</p>
+                <p class="sale-price">100L.E</p>
+        
+                  <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+
+                   <button>Add to Cart</button>
+                </div>
+<!-- ------------------------------- -->
+                <div class="product">
+                              <img src="images grocery/biscuits.jpeg" alt="علبة بسكويت بالبرتقال">
+                              <h3>علبة بسكويت برتقال 1ك</h3>
+                              <p class="original-price">290L.E</p>
+                              <p class="sale-price">240L.E</p> 
+                              
+                              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+
+                                        <button>Add to Cart</button>
+                            </div>
+ <!-- ----------------------------------- -->
+                 <div class="product">
+                              <img src="images grocery/reinga.jpg_480Wx480H" alt="رنجة مدخنة">
+                              <h3>رنجة مدخنة 1ك</h3>
+                              <p class="original-price">190L.E</p>
+                              <p class="sale-price">150L.E</p> 
+                              
+                              <img id="heart-img"  src="images grocery/heart.png" alt="Heart" onclick="if(this.src.includes('heart.png')){ this.src = './images grocery/red.png'; } else { this.src = './images grocery/heart.png'; }">
+
+                                        <button>Add to Cart</button>
+                            </div>
+            <!-- Add more products as needed -->
+            
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- js code for theme changing -->
+<script>
+  document.getElementById("theme-toggle").addEventListener("change", function() {
+const themeStyle = document.getElementById("theme-style");
+if (this.checked) {
+  themeStyle.href = "dark-theme.css";
+} else {
+  themeStyle.href = "styles.css";
+}
+});
+</script>
+
+
+
+<!-- footer -->
+<footer>
+<div class="end-page">
+  <!--Footer-->
+  <section class="footer" id="footer">
+      <div class="footer-box">
+          <a href="#" class="logo-header">
+              <img src="images grocery/M&N.jpg" alt="logo" class="logo">
+              <h2>MN Store</h2>
+          </a>
+          <div class="social">
+              <a href="#"><i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+              <a href="#"><i class='bx bxl-youtube'></i></a>
+          </div>
+      </div>
+      <div class="footer-box">
+          <div class="pay">
+              <p>Secured Payment Gateways</p>
+              <img src="images grocery/pay.jpg" alt="pay" />
+          </div>
+      </div>
+      <div class="footer-box">
+          <h2>Newsletter</h2>
+          <p>follow our news from our social media and our <br> website to know Latest offers Exclusively</p>
+      </div>
+  </section>
+  <!--Copyright-->
+  <div class="copyright">
+      <p>&#169; M&N Store for All Right Reserved.</p>
+  </div>
+</div>
+</footer>
+<!-- footer end -->
+
+</body>
+</html>

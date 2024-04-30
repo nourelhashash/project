@@ -1,0 +1,247 @@
+body {
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("photos/WhatsApp\ Image\ 2024-04-20\ at\ 12.36.11_c33dfd5a.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.Register {
+    text-decoration: none;
+}
+form {
+    border: 2px;
+    width: 400px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 15px;
+
+
+}
+
+.button {
+    background-color: rgb(41, 57, 157);
+    border-radius: 40px;
+    color: white;
+    width: 180px;
+    height: 40px;
+    font-size: large;
+    margin: 15px 0;
+    transition: 0.7s ease;
+    margin-left: 90px;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+    padding-left: 30px;
+}
+
+.big .div_e {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.big .div_p {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.div_e input {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.div_p input {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+label {
+    display: inline-block;
+    font-size: large;
+}
+/*header*/
+/*hedear content */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /*background: var(--body-color);*/
+    color: var(--text-color);
+}
+
+.navbar li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.profile li ul.dropdown-2 {
+    border-radius: 30px;
+    width: 200px;
+    /* Adjust the width as needed */
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 62px;
+    right: 0;
+    /* Adjust the left position to move it slightly to the left */
+}
+
+.profile li ul.dropdown-2 a {
+    color: black;
+}
+
+ul li:hover ul.dropdown {
+    background: var(--bg-color);
+    display: block;
+}
+
+.profile li:hover ul.dropdown-2 {
+    background: var(--bg-color);
+    display: block;
+}
+
+.profile li ul.dropdown-2 li a:hover {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+}
+
+
+:root {
+    --green-color: #3cb815;
+    --light-green-color: rgb(235, 247, 237);
+    --orange-color: #ff7e00;
+    --light-orange-color: #f75f1d;
+    --text-color: #1a2428;
+    --bg-color: #fff;
+    --body-color: #e3e6f3;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    border-radius: 0.5rem;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 25%);
+    padding: 20px 100px;
+    transition: 0.5s;
+    height: 80px;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 400;
+}
+
+.navbar.active {
+    top: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+}
+
+.logo .bx {
+    font-size: 24px;
+    color: var(--orange-color);
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+}
+
+.Dark-mode {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 70px;
+}
+
+.navbar a:hover {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+}
+
+.navbar .categories-active {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="orderstyle.css">
+  <link rel="icon" type="image/png" href="./orderformimg/M&N.jpg"> <!-- Change  to the URL of your icon image -->
+  <title>Order Form</title>
+  <!-- <script>
+    function validateForm() {
+      console.log("Form validation function called");
+      let fname = document.forms["orderform"]["fname"].value;
+      let lname = document.forms["orderform"]["lname"].value;
+      if (fname == "") {
+        alert("First Name must be filled out");
+        return false;
+      }
+      if (lname == "") {
+        alert("Last Name must be filled out");
+        return false;
+      }
+      // If all fields are filled out, the form is valid
+      return true;
+    }
+  </script>
+   -->
+   <!-- onsubmit="return validateForm()" -->
+<div class="container">
+    <div class="title">
+        <h2>Product Order Form</h2>
+    </div>
+  <div class="d-flex">
+    <form name="orderform" action=""  method="post" onsubmit="return validateForm()">
+      <!--  form fields -->
+
+    
+        <label>
+        <span class="fname">First Name <span class="required">*</span></span>
+        <input type="text" name="fname"  placeholder="enter your first name" required>
+      </label>
+      <label>
+        <span class="lname">Last Name <span class="required">*</span></span>
+        <input type="text" name="lname" placeholder="enter your last name" required>
+      </label>
+      <label>
+        <span> government / City <span class="required">*</span></span>
+        <input type="text" name="city" required> 
+      
+        <span>Street Address <span class="required">*</span></span>
+        <input type="text" name="houseadd" placeholder="House number and street name" required>
+      
+        <span>Addition address details<span class="required">*</span></span>
+        <input type="text" name="apartment" placeholder="Apartment location details" required>
+      
+        <span>Phone <span class="required">*</span></span>
+        <input type="tel" name="tele" placeholder="01XXXXXXXX" required> 
+      </label>
+      <label>
+        <span> another Phone <span class="required">*</span></span>
+        <input type="tel" name="tele2" placeholder="01XXXXXXXX" required> 
+      </label>
+      <label>
+        <span>Email Address <span class="required">*</span></span>
+        <input type="email" name="email" placeholder="Example123@gmail.com" required> 
+      </label>
+      <label>
+        <span>Additional information:<span class="required">*</span></span>
+        <textarea name="more-text" rows="4" cols="50" placeholder="Add any information you would like us to know about Delivery"></textarea>
+      </label>
+      <label>
+        <span>Enter what you can see in the picture : </span>
+        <input type="text" name="another-input">
+        <img src="./orderformimg/code.png" alt="Image Description" width="50%">
+      </label>
+      
+      
+      <button type="submit">Place Order</button>
+    </form>
+    <div class="Yorder">
+      <table>
+        <tr>
+          <th colspan="2">Your order</th>
+        </tr>
+        <tr>
+          <td>Product Name X4(Quantity): </td>
+          <td>1235L.E</td>
+        </tr>
+        
+        <tr>
+          <td>Shipping</td>
+          <td>Free shipping</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>1235L.E</td>
+          </tr>
+      </table><br>
+      
+      
+        
+        <div class="payment-options">
+          <input type="radio" id="cash" name="payment" value="cash" checked>
+          <label for="cash">Cash on Delivery</label>
+          
+          <input type="radio" id="credit-card" name="payment" value="credit-card">
+          <label for="credit-card">Credit Card</label><span>
+          <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+          </span>
+          <form></form>
+          <div class="credit-card-info" id="credit-card-info">
+            <!-- Credit card information fields -->
+            <label>
+              Card Number:
+              <input type="text" name="card-number" required>
+            </label>
+            <label>
+              Expiry Date:
+              <input type="text" name="expiry-date" required>
+              <label for="pin">PIN:</label>
+              <input type="number" id="pin" name="pin" min="0" max="9999" maxlength="4" required>
+              
+            <!-- Add more fields as needed -->
+          </div>
+        </div>
+      </form>
+      <script src="order.js"></script>
+      
+    </div><!-- Yorder -->
+   </div>
+  </div>
+</head>
+</html>

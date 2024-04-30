@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="electronics.css">
+        <link rel="icon" href="media/images/laptop_icon.png" type="image/png">
+        <title>Laptops</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+        <link rel="shortcut icon" type="x-icon" href="mn_store_logo.jpg">
+        <!-- =========== search bar icon ========= -->
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    </head>
+    <body>
+        
+         <!-- ================== start header ==================== -->
+        
+        <header>
+        <!--Navbar-->
+        <a href="#" class="logo">
+            <img src="media/images/mn_store_logo.jpg" alt="logo" class="logo">
+            <h2>M&N Store</h2>
+        </a>
+        <!--Menu Icon-->
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--Nav list-->
+        <ul class="navbar">
+            <li><button id="moon_icon" class="Dark-mode"><i class="gg-dark-mode"></i></button></li>
+            <li><a href="home.html" class="home-active">Home</a></li>
+            <li><a href="#categories" class="categories-active">categories</a></li>
+            <li><a href="Contact_Us.html">contact</a></li>
+            <li><a href="test.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html">logout</a></li>
+            
+            <li><a href="cart.html">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                    </svg>
+                </a>
+            </li>
+            
+        </ul>
+        
+        <div class="profile">
+        <a href="edit_profile.html"><i class="gg-profile"></i>edit profile</a>
+    </div>
+            
+        </header>
+        
+        <!-- ================== End header ==================== -->
+        
+        <!-- start search bar -->
+        
+        <div class="searchbar">
+                <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                <i class="gg-search"></i>
+            </div>
+        
+        <!-- end search bar -->
+        
+        <main>
+            <section class="products">
+                
+                <article class="card">
+                    <img src="media/categories/laptops/hp_victus15.jpeg" alt="hp">
+                    <div class="product-details">
+                        <h2>Hp Victus 15</h2>
+                        <p> Processor: AMD Ryzen 5 <br>
+                            Graphics card: NVIDIA GeForce RTX 2050 <br>
+                            RAM: 8GB
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 36,999.00 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/msi.jpg" alt="msi">
+                    <div class="product-details">
+                        <h2>MSI GF63</h2>
+                        <p>
+                            Processor: Intel Core i7-9750H <br>
+                            Graphics card: NVIDIA GeForce GTX 1650 <br>
+                            RAM: 16GB DDR4
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 43,377.83 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/dell.avif" alt="DELL">
+                    <div class="product-details">
+                        <h2>DELL XPS 13</h2>
+                        <p>
+                           Processor: Intel Core i5-1230U <br>
+                           Graphics card: Intel Iris Xe Graphics <br>
+                           RAM: 8GB DDR4
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 28,945.68 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/asus.jpeg"    alt="Asus">
+                    <div class="product-details">
+                        <h2>ASUS ROG Zephyrus</h2>
+                        <p> Processor: Intel Core Ultra 9 185H <br>
+                           Graphics card: Nvidia RTX 4090 <br>
+                           RAM: 32GB DDR5
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 183,333.22 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="media/categories/laptops/thinkpad.jpeg" alt="Lenovo">
+                    <div class="product-details">
+                        <h2>Lenovo ThinkPad L14</h2>
+                        <p>Processor: AMD Ryzen 5 PRO 5675U <br>
+                           Graphics card: Integrated AMD Radeon <br>
+                           RAM: 16GB DDR4
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 28,398.23 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/acer.jpeg" alt="Acer">
+                    <div class="product-details">
+                        <h2>Acer Aspire 5 A515</h2>
+                        <p>Processor: AMD Ryzen 3 3350U <br>
+                           Graphics card: AMD Radeon Vega 6 <br>
+                           RAM: 4GB DDR4
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 24,644.00 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/mouse.jpeg" alt="Redragon">
+                    <div class="product-details">
+                        <h2>Redragon S101 Gaming</h2>
+                        <p>RGB backlit gaming keyboard <br>
+                           7 different lighting modes and effects <br>
+                           Compatibility: Windows, Mac 
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 24,644.00 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/case.jpeg" alt="case">
+                    <div class="product-details">
+                        <h2>Corsair Cool Master</h2>
+                        <p>Processor: AMD Ryzen 5 5500 6X <br>
+                           Graphics card: Nividia RTX 3090  <br>
+                           RAM: 32GB DDR4
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 50,644.00 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="media/categories/laptops/ssd.jpeg" alt="ssd">
+                    <div class="product-details">
+                        <h2>SSD Kingston 920GB</h2>
+                        <p>Capacity: 920GB <br>
+                           Data Transfer: 200MB/s to 550MB/s <br>
+                           10X faster
+                        </p>
+                        <div style="display: flex; padding-bottom: 0.7rem; justify-content: space-between;">
+                            <div class="price"><i class="fa-solid fa-money-check-dollar"></i> price: 5,750.00 LE
+                            </div>
+                            
+                        <button class="cart-button" onclick="addToCart()"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        <!-- ================== Footer ==================== -->
+        
+    <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="media/images/mn_store_logo.jpg" alt="logo" class="logo-picture" />
+            <p>MN store</p>
+          
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        <div class="pay">
+          <p>Secured Payment Gateways</p>
+          <img class="visa" src="media/icons/visa-footer.jpg" alt="pay" />
+        </div>
+        <div class="copyright">
+          <p>©2024 Mina George. All Rights Reseverd.</p>
+        </div>
+      </footer>
+        
+        <!-- ===================== End footer ======================= -->
+        
+    
+        <script src="dark_mode_laptop.js"></script>
+        
+    </body>
+</html>

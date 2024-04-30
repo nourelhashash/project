@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/profile.css');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+html, body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 100%;
+    
+   background-image: url('images\ grocery/bg.jpeg');
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+}
+
+.menu-list {
+    position: absolute;
+    top: 69px;
+    left: 38%;
+    display: none;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list li {
+    margin-bottom: 20px;
+}
+
+.menu-list a {
+    color: var(--text-color);
+    padding: 10px 20px;
+    /* transition: background 0.3s; */
+}
+
+.menu-list a:hover {
+    color: var(--bg-color);
+    background: var(--green-color);
+    border-radius: 5rem;
+}
+
+
+:root {
+    --green-color: #3cb815;
+    --light-green-color: rgb(235, 247, 237);
+    --orange-color: #ff7e00;
+    --light-orange-color: #f75f1d;
+    --text-color: #1a2428;
+    --bg-color:#fdfeff;
+    --footer-color: #ffffff;
+    --container-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+header {
+    position: fixed;
+    border-radius: 0.5rem;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 25%);
+    padding: 20px 100px;
+    transition: 0.5s;
+}
+
+
+.profile a {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+}
+
+.profile a:hover {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+}
+
+.navbar.active {
+    top: 100%;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+}
+
+.logo-header .bx {
+    font-size: 24px;
+    color: var(--orange-color);
+}
+
+.logo-header img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+}
+
+.Dark-mode {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.3rem 0.5rem;
+    /* Adjust padding to make it smaller */
+    margin-top: -10px;
+    /* Add margin to make it higher */
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    /* Adjust font size to make it smaller */
+}
+
+
+.navbar a:hover {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
+}
+
+.navbar .categories-active {
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    /* transition: background 0.5s; */
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+ 
+
+/* making responsive*/
+ @media (max-width:1080px) {
+    header {
+        padding: 18px 60px;
+    }
+
+    .home-text {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 18px 4%;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+} 
+
+
+@media (max-width:852px) {
+    header {
+        padding: 12px 4%;
+    }
+
+    .menu-list {
+        top: 230px;
+        left: 38%;
+    }
+
+    #menu-icon { 
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+    }
+
+    .navbar a:hover,
+    .navbar .categories-active {
+        border-radius: 0.5rem;
+        color: var(--bg-color);
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  
+  .centerpiece {
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+     /* Adjust the height as needed */
+}
+.searchbar input {
+  padding-right: 30px;
+  /* Take up remaining space */
+}
+
+.searchbar i {
+  position: absolute;
+  
+  right: 200px;
+  margin-top: -6px;
+}
+
+.searchbar {
+  width: 70%;
+  background-color: #faf9f9;
+  border-radius: 10px 30px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left:200px ;
+  margin-bottom: -100px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 15px;
+}
+
+
+iframe {
+  width: 1024px; /* Set the width of the iframe */
+  height: 297px; /* Set the height of the iframe */
+  border: none;
+}
+
+
+
+.theme-toggle {
+  position: absolute;
+  display: none;
+}
+
+.theme-label {
+  position: absolute;
+  top:20px;
+  
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+
+/* ------------------- */
+
+/* navbar css */
+
+
+
+
+.catebar {
+  background-color: #047248;
+  color: #fff;
+  padding: 15px 0;
+  border-radius: 15px; /* Add rounded corners */
+
+}
+
+.navcontent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu li  {
+  text-decoration: none;
+  color: #fff;
+  
+}
+.catebar a {
+  color: #ffffff;
+  font-style: bold; /* Default text color */
+  background-color: transparent; /* Default background color */
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease; /* Add transition effect to color and background-color */
+}
+
+.catebar a:hover {
+  color: #000000; /* Change text color on hover */
+  border-radius: 15px 30px 15px ;
+  background-color: rgba(243, 192, 26, 0.801); /* Change background color on hover */
+}
+
+
+ 
+
+/* CSS for the product sorting section */
+#product-sorting {
+  size: 25px;
+  background-color:rgba(255, 255, 255, 0.89);
+  background-size: contain;
+  border-radius: 15px;
+  backdrop-filter: blur(0.3); /* Set background color */
+  
+  padding: 15px 10px; /* Add padding as needed */
+  overflow-x: auto;
+}
+
+#product-sorting .container {
+  display: flex;
+}
+.container h3 {
+  font-family: "Roboto", sans-serif; /* Change font family */
+  font-size: 20px; /* Change font size */
+  font-weight: bold; /* Change font weight */
+  color: #0a0a0a; /* Change font color */
+  text-transform: uppercase; /* Change text case to uppercase */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 25px; /* Adjust margin as needed */
+  border-bottom: 2px solid #0f0f0f; /* Add a border bottom */
+  padding-bottom: 5px; /* Add padding to the bottom */
+}
+
+.sorting-icons {
+  margin-top: 20px;
+  display: flex;
+  
+  
+}
+.sorting-option i:hover{
+  transform: scale(1.5);
+}
+
+.sorting-option {
+  flex: 0 0 80px; /* Adjust the width of each sorting option */
+  text-align: center;
+  padding: 0 5px;
+   /* Add padding as needed */
+}
+
+.sorting-option i {
+  font-size: 20px;
+  font-style: bold; /* Adjust icon size */
+  color: #000000;
+  transition: transform 0.3 ease; /* Set icon color */
+}
+
+.sorting-option span {
+  display: block;
+  font-size: 16px;
+  font-style: bold;
+  color: #000000;
+}
+
+
+
+
+
+
+
+/* Adjust product grid to prevent overlap with sidebar */
+.product-grid {
+  overflow: hidden; /* Clear float */
+}
+
+
+/* Adjust main content to prevent overlap with sidebar */
+.product-grid {
+  margin: 50px; 
+}
+
+
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow products to wrap to the next line */
+  justify-content: space-between; /* Distribute space between products */
+  margin-bottom: 100px;
+
+}
+
+
+  .product {
+    border: 5px solid #03421f;
+    border-radius: 15px 50px 30px 5px; ;
+    text-align: center;
+    margin: 10px;
+    margin-top: 15px;
+    padding:0;
+    position: relative;
+    width: calc(25% - 20px) ;
+    background-color: rgba(250, 250, 250, 0.589);
+    backdrop-filter: blur(5px); /* Add backdrop filter for blur effect */
+
+    transition: transform 0.3s ease;
+    overflow: auto;
+
+  }
+  .product .original-price,
+.product .sale-price {
+    margin-bottom: 5px;
+}
+
+.product .original-price {
+    color: red; /* Original price color */
+    text-decoration:line-through; /* Add line-through to the original price */
+}
+
+.product .sale-price {
+    color: green; /* Sale price color */
+    font-weight: bold; /* Make the sale price bold */
+}
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product img {
+    max-width: 150px;
+    height:150px ;
+  }
+  
+  
+  
+  .product button {
+    display: inline-block;
+    position: center;
+    background-color:#03b66bf5;
+    color: #fff;
+    border: none;
+    border-radius: 10px ;
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-left: 66px; 
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;}
+  
+    .product button:hover {
+      background-color: #033d2f;
+      transform: scale(1.1);
+    }
+    #heart-img {
+      width: 20px; /* Adjust the width as needed */
+      height: auto;
+      transition: transform 0.3s ease; /* Add transition effect */ 
+    }
+    #heartIcon:hover {
+      transform: scale(1.2); /* Scale the heart icon on hover */
+    }
+
+
+
+    /* footer css */
+    .end-page {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      padding: 20px;
+      margin-top: auto;
+  }
+  
+  .follow-us {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  
+  .footer {
+      display: grid;
+      background-color: #ffffff;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      gap: 1.5rem;
+      margin-bottom: 20px;
+  }
+  
+  .footer-box {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .footer-box p {
+      font-size: 0.938rem;
+      margin: 0.5rem 0 1rem;
+  }
+  
+  .pay {
+      width: 230px;
+  }
+  
+  .social {
+      display: flex;
+      align-items: center;
+      align-items: center;
+      column-gap: 0.5rem;
+  }
+  
+  .social .bx {
+      padding: 10px;
+      background: var(--bg-color);
+      color: var(--green-color);
+      border-radius: 5rem;
+      font-size: 20px;
+  }
+  
+  .social .bx:hover {
+      background: var(--green-color);
+      color: var(--bg-color);
+      transition: 0.2s all linear;
+  }
+  
+  .footer-box a {
+      color: #464748;
+      margin-bottom: 1rem;
+  }
+  
+  .footer-box a:hover {
+      color: var(--light-orange-color);
+  }
+  
+  .footer-box form {
+      border-bottom: 1px solid var(--text-color);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+      width: 300px;
+  }
+  
+  .footer-box form input {
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 240px;
+  }
+  
+  .footer-box form .bx {
+      font-size: 20px;
+      color: var(--light-orange-color);
+      cursor: pointer;
+  }
+  
+  .footer-box form .bxs-envelope {
+      color: var(--green-color);
+  }
+  
+  .copyright {
+      text-align: center;
+      padding: 20px;
+  }
